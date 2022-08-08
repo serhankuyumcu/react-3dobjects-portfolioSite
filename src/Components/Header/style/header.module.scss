@@ -1,0 +1,86 @@
+@import "../../SCSS/mixins.scss";
+@import "../../SCSS/variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap");
+.mainHeader {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+.headerInner {
+  padding: 0 1rem;
+  background-color: $maincolor;
+}
+.logoImg{
+  width: 50px;
+  height: 50px;
+}
+.navLogo {
+  text-decoration: none;
+  color: #fff !important;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Source Code Pro", monospace;
+}
+.hamburgerBtn{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  display: none;
+}
+.hamburgerIcon{
+  font-size: 30px;
+  color:$purple;
+  &:hover{
+    color:$green !important;
+  }
+}
+.logoInner {
+  @include flexcolcenter;
+  .logoImg {
+    transition: all 0.3s ease-in-out;
+  }
+  &:hover {
+    .logoImg {
+      transform: rotate(180deg);
+    }
+  }
+}
+.logoTitle {
+  display: inline-block;
+  margin-top: 5px;
+}
+.navLink {
+  color: $purple;
+  margin: 10px 0.7rem;
+  text-decoration: none;
+  font-size: 18px;
+
+  font-family: "Source Code Pro", monospace;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    color: $green !important;
+  }
+}
+
+
+
+@media screen and (max-width:767.90px) {
+  .hamburgerBtn{
+    display: block !important;
+  }
+  .navbarNav{
+    margin-top: 10px;
+    margin-left: 0 !important;
+  }
+  .navLink{
+    display: inline-block;
+    margin: 5px;
+  }
+}
+@media screen and (max-width:289.90px) {
+  .logoImg{
+    width: 40px !important;
+    height: 40px !important;
+  }
+}
