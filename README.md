@@ -4,5 +4,5 @@
 
 Personal web page design using THREEJS. (Three.js is a JavaScript library for 3D graphics.)
 
-Netlify : https://serhankuyumcu.heroku.app
+Heroku : https://serhankuyumcu.heroku.app
 
