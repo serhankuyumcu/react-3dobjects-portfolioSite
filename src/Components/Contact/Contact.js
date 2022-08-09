@@ -53,9 +53,7 @@ const Contact = () => {
 
               <span className={style.tags}>{bodyTags.form}</span>
 
-              <form onSubmit={handleSubmit} className="p-1" method="POST"
-                data-netlify="true"
-                netlify netlify-honeypot="bot-field" hidden>
+              <form onSubmit={handleSubmit} className="p-1" method="POST" data-netlify="true"netlify netlify-honeypot="bot-field" >
                    <input type="hidden" name="form-name" value="contact" />
                 <div className="row justify-content-center align-items-center g-3">
                   <div className="col-md-6">
