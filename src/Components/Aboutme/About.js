@@ -28,7 +28,7 @@ const About = () => {
                 <span translate="no" className={style.letterAnimation}>
                   t
                 </span>
-                <span translate="no" className={style.letterAnimation}></span>
+                <span translate="no" className={style.letterAnimation}>-</span>
                 <span translate="no" className={style.nameLetter}>
                   M
                 </span>
