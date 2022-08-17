@@ -23,7 +23,12 @@ const Contact = () => {
         }, 3000);
       },
     });
-    
+    <form name="contact v1" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="text" name="subject" />
+      <textarea name="message"></textarea>
+    </form>
   return (
     <section className={style.contactMain}>
       <div className="container">
@@ -53,8 +58,8 @@ const Contact = () => {
 
               <span className={style.tags}>{bodyTags.form}</span>
 
-              <form onSubmit={handleSubmit} className="p-1" method="POST" data-netlify="true">
-                   <input type="hidden" name="form-name" value="contact" />
+              <form onSubmit={handleSubmit} className="p-1" method="POST" >
+                   <input type="hidden" name="form-name" value="contact v1" />
                 <div className="row justify-content-center align-items-center g-3">
                   <div className="col-md-6">
                     <input
