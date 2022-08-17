@@ -23,7 +23,7 @@ const Contact = () => {
         }, 3000);
       },
     });
-
+    
   return (
     <section className={style.contactMain}>
       <div className="container">
