@@ -1,34 +1,37 @@
-import React from "react";
+import React, { useRef , useState} from 'react'
 import style from "./style/contact.module.css";
 import { bodyTags } from "../../Helpers/HelperItems";
-import { useFormik } from "formik";
-import validationSchema from "./Validation";
+import { useForm } from 'react-hook-form'
 import ContactCanvas from "./ContactCanvas";
 import { HiOutlineMailOpen } from "react-icons/hi";
+import emailjs from 'emailjs-com'
+import * as Yup from "yup";
+import { yupResolver } from '@hookform/resolvers/yup'
+
 const Contact = () => {
-  const [isMessage, setIsMessage] = React.useState(false);
-  const { handleSubmit, handleChange, errors, handleBlur, touched } =
-    useFormik({
-      initialValues: {
-        name: "",
-        email: "",
-        subject: "",
-        message: "",
-      },
-      validationSchema,
-      onSubmit: (values) => {
-        setIsMessage(true);
-        setTimeout(() => {
-          setIsMessage(false);
-        }, 3000);
-      },
-    });
-    <form name="contact v1" netlify netlify-honeypot="bot-field" hidden>
-      <input type="text" name="name" />
-      <input type="email" name="email" />
-      <input type="text" name="subject" />
-      <textarea name="message"></textarea>
-    </form>
+  const form = useRef();
+  const [isSuccessful, setIsSuccessful,isMessage] = useState(false)
+  const sendEmail = (e) => {
+    e.preventDefault()
+    emailjs.sendForm('service_zzn6jgm', 'template_he1hhri',form.current, 'mfe_P39oyBjA_U4gI')
+      .then((result) => {
+          console.log(result.text)
+          window.location.reload()
+      }, (error) => {
+          console.log(error.text)
+      })
+      e.target.reset()
+    }
+  const schema = Yup.object().shape({
+    name: Yup.string().required("Name is required"),
+    email: Yup.string().email("Invalid email").required("Email is required"),
+    subject: Yup.string().required("Subject is required"),
+    message: Yup.string().required("Message is required"),
+  });
+  const { register , formState: { errors } } = useForm({
+    resolver: yupResolver(schema)
+  })
+   
   return (
     <section className={style.contactMain}>
       <div className="container">
@@ -58,43 +61,39 @@ const Contact = () => {
 
               <span className={style.tags}>{bodyTags.form}</span>
 
-              <form onSubmit={handleSubmit} className="p-1" method="POST" >
-                   <input type="hidden" name="form-name" value="contact v1" />
+              <form ref={form} onSubmit={sendEmail} >
                 <div className="row justify-content-center align-items-center g-3">
                   <div className="col-md-6">
                     <input
-                      onBlur={handleBlur}
-                      onChange={handleChange}
                       name="name"
                       type="text"
                       className={`${style.contactInput} ${
-                        errors.name && touched.name && style.errorInput
+                        errors.name  && style.errorInput
                       }`}
                       placeholder="Name"
+                      { ...register('name')}
                     />
                   </div>
                   <div className="col-md-6">
                     <input
-                      onBlur={handleBlur}
-                      onChange={handleChange}
                       name="email"
                       type="text"
                       className={`${style.contactInput} ${
-                        errors.email && touched.email && style.errorInput
+                        errors.email && style.errorInput
                       }`}
                       placeholder="Email"
+                      { ...register('email')}
                     />
                   </div>
                   <div className="col-md-12">
                     <input
-                      onBlur={handleBlur}
-                      onChange={handleChange}
                       name="subject"
                       type="text"
                       className={`${style.contactInput} ${
-                        errors.subject && touched.subject && style.errorInput
+                        errors.subject  && style.errorInput
                       }`}
                       placeholder="Subject"
+                      { ...register('subject')}
                     />
                   </div>
                   <div className="col-md-12">
@@ -102,13 +101,12 @@ const Contact = () => {
                       rows="4"
                       cols="50"
                       wrap="soft"
-                      onBlur={handleBlur}
-                      onChange={handleChange}
                       name="message"
                       className={`${style.contactInput} ${
-                        errors.message && touched.message && style.errorInput
+                        errors.message  && style.errorInput
                       }`}
                       placeholder="Message"
+                      { ...register('message')}
                     ></textarea>
                   </div>
                 </div>
@@ -117,7 +115,7 @@ const Contact = () => {
                   <div className={style.contactButton}>
                     <button
                       type="submit"
-                      onClick={handleSubmit}
+                      onClick={sendEmail}
                       className={style.sendButton}
                     >
                       Send
