@@ -1,7 +1,7 @@
 
 # Personal Portfolio Website
 
-A professional website design in order to realise personal portfolio.
+A professional website design in order to release personal portfolio.
 
 
 
