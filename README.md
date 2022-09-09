@@ -5,26 +5,25 @@ A professional website design in order to release personal portfolio.
 
 
 
-## API Kullanımı
+## API USAGE
 
-#### Tüm öğeleri getir
 
 ```http
   email.js service CDN
 ```
 
-| Parametre | Tip     | Açıklama                |
+| Param | Type    | Description                |
 | :-------- | :------- | :------------------------- |
-| `service ID` | `string` | **Gerekli**. API anahtarınız. |
-| `template ID` | `string` | **Gerekli**. API anahtarınız. |
-| `Public Key` | `string` | **Gerekli**. API anahtarınız. |
+| `service ID` | `string` | **Require**. API key. |
+| `template ID` | `string` | **Require**. API key. |
+| `Public Key` | `string` | **Require**. API key. |
 
 Requirements might be obtained by email.js.com.
 
 
 
   
-## Ekler
+## Addons
 
 Additional some packages
 
