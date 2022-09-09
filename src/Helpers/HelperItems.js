@@ -6,59 +6,59 @@ import nodeIcon from "../assets/Technologies/nodeicon.png";
 import mongoIcon from "../assets/Technologies/mongoicon.png";
 import bootstrapIcon from "../assets/Technologies/bootstrapicon.png";
  // E COMMERCE
-import eshop from "../assets/commerceAssets/eshop.png";
-import ecommerce from "../assets/commerceAssets/mockup.png";
-import eshop1 from "../assets/commerceAssets/project1A.png";
-import eshop2 from "../assets/commerceAssets/project1B.png";
-import eshop4 from "../assets/commerceAssets/project1D.png";
-import eshop5 from "../assets/commerceAssets/project1E.jpg";
-// CRYPTO ASSETS
-import crypto from "../assets/bitcoinAssets/crypto.jpg";
-import crypto1 from "../assets/bitcoinAssets/mockup.png";
-import crypto2 from "../assets/bitcoinAssets/pic1.jpg";
-import crypto3 from "../assets/bitcoinAssets/pic2.jpg";
-import crypto4 from "../assets/bitcoinAssets/pic3.jpg";
-import crypto5 from "../assets/bitcoinAssets/pic4.jpg";
-// ADMIN PAGE ASSETS
-import admin from "../assets/adminAssets/admin.jpg";
-import admin1 from "../assets/adminAssets/mockup.png";
-import admin2 from "../assets/adminAssets/pic1.jpg";
-import admin3 from "../assets/adminAssets/pic2.png";
-import admin4 from "../assets/adminAssets/pic3.png";
-import admin5 from "../assets/adminAssets/pic4.png";
-// RANDOM ASSETS
-import random from "../assets/randomAssets/random.jpg";
-import random1 from "../assets/randomAssets/mockup.png";
-import random2 from "../assets/randomAssets/pic1.jpg";
-import random3 from "../assets/randomAssets/pic2.jpg";
-import random4 from "../assets/randomAssets/pic3.jpg";
-import random5 from "../assets/randomAssets/pic4.jpg";
-// CLOTHING ASSETS
-import clothing from "../assets/clothingAssets/clothing.jpg";
-import clothing1 from "../assets/clothingAssets/mockup.png";
-import clothing2 from "../assets/clothingAssets/pic1.jpg";
-import clothing3 from "../assets/clothingAssets/pic2.png";
-// PIZZA ASSETS
-import pizzaStop from "../assets/PizzaStopAssets/pizzastop.jpg";
-import pizza1 from "../assets/PizzaStopAssets/mockup.png";
-import pizza2 from "../assets/PizzaStopAssets/pic1.jpg";
-import pizza3 from "../assets/PizzaStopAssets/pic2.jpg";
-import pizza4 from "../assets/PizzaStopAssets/pic3.jpg";
-// CRYPTOZEN ASSETS
-import cryptozen from "../assets/cryptozenAssets/cryptozen.jpg";
-import cryptozen1 from "../assets/cryptozenAssets/mockup.png";
-import cryptozen2 from "../assets/cryptozenAssets/pic1.png";
-import cryptozen3 from "../assets/cryptozenAssets/pic2.png";
-import cryptozen4 from "../assets/cryptozenAssets/pic3.png";
+// import eshop from "../assets/commerceAssets/eshop.png";
+// import ecommerce from "../assets/commerceAssets/mockup.png";
+// import eshop1 from "../assets/commerceAssets/project1A.png";
+// import eshop2 from "../assets/commerceAssets/project1B.png";
+// import eshop4 from "../assets/commerceAssets/project1D.png";
+// import eshop5 from "../assets/commerceAssets/project1E.jpg";
+// // CRYPTO ASSETS
+// import crypto from "../assets/bitcoinAssets/crypto.jpg";
+// import crypto1 from "../assets/bitcoinAssets/mockup.png";
+// import crypto2 from "../assets/bitcoinAssets/pic1.jpg";
+// import crypto3 from "../assets/bitcoinAssets/pic2.jpg";
+// import crypto4 from "../assets/bitcoinAssets/pic3.jpg";
+// import crypto5 from "../assets/bitcoinAssets/pic4.jpg";
+// // ADMIN PAGE ASSETS
+// import admin from "../assets/adminAssets/admin.jpg";
+// import admin1 from "../assets/adminAssets/mockup.png";
+// import admin2 from "../assets/adminAssets/pic1.jpg";
+// import admin3 from "../assets/adminAssets/pic2.png";
+// import admin4 from "../assets/adminAssets/pic3.png";
+// import admin5 from "../assets/adminAssets/pic4.png";
+// // RANDOM ASSETS
+// import random from "../assets/randomAssets/random.jpg";
+// import random1 from "../assets/randomAssets/mockup.png";
+// import random2 from "../assets/randomAssets/pic1.jpg";
+// import random3 from "../assets/randomAssets/pic2.jpg";
+// import random4 from "../assets/randomAssets/pic3.jpg";
+// import random5 from "../assets/randomAssets/pic4.jpg";
+// // CLOTHING ASSETS
+// import clothing from "../assets/clothingAssets/clothing.jpg";
+// import clothing1 from "../assets/clothingAssets/mockup.png";
+// import clothing2 from "../assets/clothingAssets/pic1.jpg";
+// import clothing3 from "../assets/clothingAssets/pic2.png";
+// // PIZZA ASSETS
+// import pizzaStop from "../assets/PizzaStopAssets/pizzastop.jpg";
+// import pizza1 from "../assets/PizzaStopAssets/mockup.png";
+// import pizza2 from "../assets/PizzaStopAssets/pic1.jpg";
+// import pizza3 from "../assets/PizzaStopAssets/pic2.jpg";
+// import pizza4 from "../assets/PizzaStopAssets/pic3.jpg";
+// // CRYPTOZEN ASSETS
+// import cryptozen from "../assets/cryptozenAssets/cryptozen.jpg";
+// import cryptozen1 from "../assets/cryptozenAssets/mockup.png";
+// import cryptozen2 from "../assets/cryptozenAssets/pic1.png";
+// import cryptozen3 from "../assets/cryptozenAssets/pic2.png";
+// import cryptozen4 from "../assets/cryptozenAssets/pic3.png";
 
-// ESTATE ASSETS
-import estate from "../assets/estateAssets/estate.jpg";
-import estate1 from "../assets/estateAssets/mockup.png";
-import estate2 from "../assets/estateAssets/pic1.png";
-import estate3 from "../assets/estateAssets/pic2.png";
-import estate4 from "../assets/estateAssets/pic3.png";
-import estate5 from "../assets/estateAssets/pic4.png";
-import estate6 from "../assets/estateAssets/pic5.png";
+// // ESTATE ASSETS
+// import estate from "../assets/estateAssets/estate.jpg";
+// import estate1 from "../assets/estateAssets/mockup.png";
+// import estate2 from "../assets/estateAssets/pic1.png";
+// import estate3 from "../assets/estateAssets/pic2.png";
+// import estate4 from "../assets/estateAssets/pic3.png";
+// import estate5 from "../assets/estateAssets/pic4.png";
+// import estate6 from "../assets/estateAssets/pic5.png";
 export const bannerLetters = [
   "H",
   "i",
