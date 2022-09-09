@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./style/projects.module.css";
-import { bodyTags, projects } from "../../Helpers/HelperItems";
-import { FaEye } from "react-icons/fa";
+import { bodyTags } from "../../Helpers/HelperItems";
+//import { FaEye } from "react-icons/fa";
 import { useDisclosure } from "@chakra-ui/react";
 import ProjectModal from "./ProjectModal";
 
@@ -31,7 +31,7 @@ const Projects = () => {
         </h1>
         <span className={`ms-2 ${style.tags}`}>{bodyTags.h1Close}</span>
         <div className="row my-2 g-4 align-items-center">
-          {projects.map((project) => {
+          {/* {projects.map((project) => {
             return (
               <div key={project.id} className="col-md-4 col-lg-4">
                 <div className={style.projectCard}>
@@ -69,7 +69,7 @@ const Projects = () => {
                 </div>
               </div>
             );
-          })}
+          })} */}
         </div>
         <ProjectModal isOpen={isOpen} onClose={onClose} data={currentData} />
         <span className={style.tags}>{bodyTags.bodyClose}</span>

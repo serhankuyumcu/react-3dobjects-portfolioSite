@@ -1,11 +1,11 @@
-import htmlIcon from "../assets/Technologies/htmlicon.png";
-import cssIcon from "../assets/Technologies/cssicon.png";
-import sassIcon from "../assets/Technologies/sassicon.png";
-import reactIcon from "../assets/Technologies/reacticon.png";
-import nodeIcon from "../assets/Technologies/nodeicon.png";
-import mongoIcon from "../assets/Technologies/mongoicon.png";
-import bootstrapIcon from "../assets/Technologies/bootstrapicon.png";
- // E COMMERCE
+// import htmlIcon from "../assets/Technologies/htmlicon.png";
+// import cssIcon from "../assets/Technologies/cssicon.png";
+// import sassIcon from "../assets/Technologies/sassicon.png";
+// import reactIcon from "../assets/Technologies/reacticon.png";
+// import nodeIcon from "../assets/Technologies/nodeicon.png";
+// import mongoIcon from "../assets/Technologies/mongoicon.png";
+// import bootstrapIcon from "../assets/Technologies/bootstrapicon.png";
+//  // E COMMERCE
 // import eshop from "../assets/commerceAssets/eshop.png";
 // import ecommerce from "../assets/commerceAssets/mockup.png";
 // import eshop1 from "../assets/commerceAssets/project1A.png";
@@ -130,84 +130,84 @@ export const bodyTags = {
   articleClose: `</article>`,
 };
 
-export const projects = [
-  {
-    id: 7,
-    title: "Cryptozen",
-    description: "Cryptozen is a web application that allows users to track their crypto currencies.",
-    img: cryptozen,
-    //link: "https://cryptozen.netlify.app/",
-    //github: "https://github.com/serkancagman/cryptozen",
-    tags:[reactIcon, bootstrapIcon,sassIcon],
-    projectImages: [  cryptozen1, cryptozen2, cryptozen3, cryptozen4 ],
-  },
-  {
-    id: 8,
-    title: "Estate NextJS",
-    description: "Estate NextJS is a web application that allows users to find properties.",
-    img: estate,
-    //link: "https://estate-nextjs.netlify.app/",
-    //github: "https://github.com/serkancagman/estate-app",
-    tags:[reactIcon, bootstrapIcon,sassIcon,nodeIcon,mongoIcon],
-    projectImages: [ estate1, estate2, estate3, estate4, estate5, estate6 ],
-  },
-  {
-    id: 1,
-    title: "E-commerce",
-    description: "E-commerce website",
-    img: eshop,
-    link: " ",
-    //github: "https://github.com/serkancagman/E-Commerce-Project",
-    tags: [reactIcon, htmlIcon, sassIcon, bootstrapIcon, nodeIcon, mongoIcon],
-    projectImages: [ecommerce, eshop1, eshop2, eshop4, eshop5],
-  },
-  {
-    id: 2,
-    title: "Pizza Stop",
-    description: "Pizza Stop",
-    img: pizzaStop,
-    link: " ",
-    //github: "https://github.com/serkancagman/Best-Pizza-React",
-    tags: [reactIcon, htmlIcon, sassIcon, bootstrapIcon, nodeIcon, mongoIcon],
-    projectImages: [pizza1, pizza2, pizza3, pizza4],
-  },
+// export const projects = [
+//   {
+//     id: 7,
+//     title: "Cryptozen",
+//     description: "Cryptozen is a web application that allows users to track their crypto currencies.",
+//     img: cryptozen,
+//     //link: "https://cryptozen.netlify.app/",
+//     //github: "https://github.com/serkancagman/cryptozen",
+//     tags:[reactIcon, bootstrapIcon,sassIcon],
+//     projectImages: [  cryptozen1, cryptozen2, cryptozen3, cryptozen4 ],
+//   },
+//   {
+//     id: 8,
+//     title: "Estate NextJS",
+//     description: "Estate NextJS is a web application that allows users to find properties.",
+//     img: estate,
+//     //link: "https://estate-nextjs.netlify.app/",
+//     //github: "https://github.com/serkancagman/estate-app",
+//     tags:[reactIcon, bootstrapIcon,sassIcon,nodeIcon,mongoIcon],
+//     projectImages: [ estate1, estate2, estate3, estate4, estate5, estate6 ],
+//   },
+//   {
+//     id: 1,
+//     title: "E-commerce",
+//     description: "E-commerce website",
+//     img: eshop,
+//     link: " ",
+//     //github: "https://github.com/serkancagman/E-Commerce-Project",
+//     tags: [reactIcon, htmlIcon, sassIcon, bootstrapIcon, nodeIcon, mongoIcon],
+//     projectImages: [ecommerce, eshop1, eshop2, eshop4, eshop5],
+//   },
+//   {
+//     id: 2,
+//     title: "Pizza Stop",
+//     description: "Pizza Stop",
+//     img: pizzaStop,
+//     link: " ",
+//     //github: "https://github.com/serkancagman/Best-Pizza-React",
+//     tags: [reactIcon, htmlIcon, sassIcon, bootstrapIcon, nodeIcon, mongoIcon],
+//     projectImages: [pizza1, pizza2, pizza3, pizza4],
+//   },
   
-  {
-    id: 3,
-    title: "Admin Dashboard Panel",
-    description: "Admin Dashboard Panel",
-    img: admin,
-    link: " ",
-    //github: "https://github.com/serkancagman/E-Commerce-Project",
-    tags: [reactIcon, htmlIcon, sassIcon, bootstrapIcon],
-    projectImages: [admin1, admin2, admin3, admin4, admin5],
-  },
-  {
-    id: 4,
-    title: "Clothing Store",
-    description: "Clothing Store",
-    img: clothing,
-    link: " ",
-    tags: [reactIcon, htmlIcon, cssIcon, bootstrapIcon],
-    projectImages: [clothing1, clothing2, clothing3],
-  },
-  {
-    id: 5,
-    title: "Random Things",
-    description: "Random Things",
-    img: random,
-    link: " ",
-    tags: [reactIcon, htmlIcon, cssIcon, bootstrapIcon],
-    projectImages: [random1, random2, random3, random4, random5],
-  },
-  {
-    id: 6,
-    title: "Bitcoin Currency",
-    description: "Bitcoin Currency",
-    img: crypto,
-    link: " ",
-    //github:"https://github.com/serkancagman/Bitcoin-currency-front-end-project-react",
-    tags: [reactIcon, htmlIcon, sassIcon, bootstrapIcon],
-    projectImages: [crypto1, crypto2, crypto3, crypto4, crypto5],
-  },
-];
+//   {
+//     id: 3,
+//     title: "Admin Dashboard Panel",
+//     description: "Admin Dashboard Panel",
+//     img: admin,
+//     link: " ",
+//     //github: "https://github.com/serkancagman/E-Commerce-Project",
+//     tags: [reactIcon, htmlIcon, sassIcon, bootstrapIcon],
+//     projectImages: [admin1, admin2, admin3, admin4, admin5],
+//   },
+//   {
+//     id: 4,
+//     title: "Clothing Store",
+//     description: "Clothing Store",
+//     img: clothing,
+//     link: " ",
+//     tags: [reactIcon, htmlIcon, cssIcon, bootstrapIcon],
+//     projectImages: [clothing1, clothing2, clothing3],
+//   },
+//   {
+//     id: 5,
+//     title: "Random Things",
+//     description: "Random Things",
+//     img: random,
+//     link: " ",
+//     tags: [reactIcon, htmlIcon, cssIcon, bootstrapIcon],
+//     projectImages: [random1, random2, random3, random4, random5],
+//   },
+//   {
+//     id: 6,
+//     title: "Bitcoin Currency",
+//     description: "Bitcoin Currency",
+//     img: crypto,
+//     link: " ",
+//     //github:"https://github.com/serkancagman/Bitcoin-currency-front-end-project-react",
+//     tags: [reactIcon, htmlIcon, sassIcon, bootstrapIcon],
+//     projectImages: [crypto1, crypto2, crypto3, crypto4, crypto5],
+//   },
+// ];
